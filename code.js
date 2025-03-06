@@ -3,7 +3,6 @@ for (let i = 1; i < array.length; i = 2 * i){
     for (let left = 0; left < array.length - 1; left+=2*i){  
          let right = Math.min(left + i , array.length - 1);
          let bound = Math.min(left + (2 * i) - 1, array.length - 1)
-        //  merge(array, left, right, bound);
          let lptr = left;
          let rptr = right;
          while (lptr <= right && rptr <= bound){
